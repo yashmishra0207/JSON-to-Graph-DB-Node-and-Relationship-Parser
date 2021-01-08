@@ -1,0 +1,12 @@
+Seq_id,Label (Primary),RelationshipName,Node/Relationship,Pair,Pair_seq_ids,IdObject,TimeCreated,Name,MetricIsInternational,TimeEvent
+1,Team,NA,Node,NA,NA,payload►teams►0-N►id,Populate time of creation,payload►teams►0-N►name,NA,NA
+2,Ground,NA,Node,NA,NA,payload►grounds►0-N►ground_id,Populate time of creation,payload►grounds►0-N►ground_id,payload►grounds►0-N►host_international,NA
+3,City,NA,Node,NA,NA,payload►grounds►0-N►location►city,Populate time of creation,payload►grounds►0-N►location►city,NA,NA
+4,State,NA,Node,NA,NA,payload►grounds►0-N►location►state,Populate time of creation,payload►grounds►0-N►location►state,NA,NA
+5,Country,NA,Node,NA,NA,payload►grounds►0-N►location►country,Populate time of creation,payload►grounds►0-N►location►country,NA,NA
+6,Player,NA,Node,NA,NA,payload►teams►0-N►members►0-N►player_id,Populate time of creation,payload►teams►0-N►members►0-N►name,NA,NA
+7,Player,NA,Node,NA,NA,payload►sport►player_of_the_match,Populate time of creation,NA,NA,NA
+8,Match,NA,Node,NA,NA,payload►sport►match_id,Populate time of creation,payload►sport►match_id,NA,NA
+9,NA,PLAYED_WITH,Relationship,Team->Team,(1)->(1),NA,NA,NA,NA,NA
+10,NA,PLAYED,Relationship,Team->Match,(1)->(8),NA,NA,NA,NA,NA
+11,NA,PLAYER_OF_THE_MATCH,Relationship,Match->Player,(8)->(7),NA,NA,NA,NA,NA
