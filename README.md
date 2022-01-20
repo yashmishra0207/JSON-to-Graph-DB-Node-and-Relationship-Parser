@@ -1,4 +1,4 @@
-# tribes_ai_internship_2019_yashmishra1998
+# JSON to Graph DB Node and Relationship Parser
 
 Steps for code execution:
 
